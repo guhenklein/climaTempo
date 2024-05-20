@@ -1,5 +1,5 @@
  const apiKey = "ea8174ff9fde861bcc0b19ef66569db9";
- const apiCountryURL = "";
+ //const apiCountryURL = "";
 
  const cityInput = document.querySelector("#city-input");
  const searchBtn = document.querySelector("#search");
@@ -8,7 +8,7 @@
  const tempElement = document.querySelector("#temperature span");
  const descElement = document.querySelector("#description");
  const weatherIconElement = document.querySelector("#weather-icon");
- const countryElement = document.querySelector("#country");
+ //const countryElement = document.querySelector("#country");
  const humidityElement = document.querySelector("#umidity span");
  const windElement = document.querySelector("#wind span");
 
@@ -35,7 +35,7 @@
     tempElement.innerText = parseInt(data.main.temp);
     descElement.innerText = data.weather[0].description;
     weatherIconElement.setAttribute("src", `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
-    countryElement.setAttribute("src", apiCountryURL + data.sys.country);
+    //countryElement.setAttribute("src", apiCountryURL + data.sys.country);
     humidityElement.innerText = `${data.main.humidity}%`;
     windElement.innerText = `${data.wind.speed}km/h`;
 
