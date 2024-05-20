@@ -104,3 +104,20 @@ body {
     margin: 0.6rem;
     padding: 0.6rem;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: #5c54ed;
+    cursor: pointer;
+
+}
